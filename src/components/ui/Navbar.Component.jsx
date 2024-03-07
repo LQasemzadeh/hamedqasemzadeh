@@ -23,7 +23,7 @@ const NavbarComponent = () => {
     }
 
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center px-16 bg-gradient-to-b from-orange-500">
+        <div className="fixed w-full h-[80px] flex justify-between items-center px-16 bg-gradient-to-b from-blue-500">
             <div>
                 <img src={ Logo } alt="logo" style={{ width: "80px" }}/>
             </div>
