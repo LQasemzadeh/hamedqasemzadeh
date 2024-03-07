@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from  "react-icons/fa";
 import Logo from  "../../assets/images/H.png";
+import SocialsComponent from "./socials.component";
 
 
-const navigation = [
+const navbar = [
     { name: 'Home', href: '#', current: false },
     { name: 'About', href: '#', current: false },
-    { name: 'Work', href: '#', current: false },
+    { name: 'Works', href: '#', current: false },
     { name: 'Skills', href: '#', current: false },
     { name: 'Contact', href: '#', current: false },
 ]
@@ -22,13 +23,13 @@ const NavbarComponent = () => {
     }
 
     return (
-        <div className="fixed w-full h-[80px] flex  items-center px-16 bg-gradient-to-b from-orange-500">
+        <div className="fixed w-full h-[80px] flex justify-between items-center px-16 bg-gradient-to-b from-orange-500">
             <div>
                 <img src={ Logo } alt="logo" style={{ width: "80px" }}/>
             </div>
 
-            <div className="hidden lg:ml-12 lg:flex lg:gap-x-14">
-                {navigation.map((item) => (
+            <div className="hidden md:ml-12 md:flex md:gap-x-14">
+                {navbar.map((item) => (
                     <a key={item.name} href={item.href} className={classNames(
                         item.current ? 'text-blue-800' : 'text-blue-800 hover:hover:bg-blue-900/50 hover:text-white',
                         'rounded-md px-3 py-2 text-sm font-medium'
@@ -46,6 +47,14 @@ const NavbarComponent = () => {
             </div>
 
             {/* Start Humberger Menu */}
+            <div className={
+                !nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-blue-900 flex-col justify-center items-center"
+            }>
+
+            </div>
+
+            {/* Socials Menu */}
+            <SocialsComponent />
 
 
 
