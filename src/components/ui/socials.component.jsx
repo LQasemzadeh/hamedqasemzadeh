@@ -5,7 +5,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const SocialsComponent = () => {
     return (
-        <div className="flex fixed flex-col top-[35%] left-0">
+        <div className="hidden lg:block flex fixed flex-col top-[35%] left-0">
             <ul>
                 {/* Start LinkedIn */}
                 <li className="w-[150px] h-[40px] ml-[-100px] pt-1 pr-2 justify-between items-center hover:ml-[-10px] duration-300 bg-blue-600">
