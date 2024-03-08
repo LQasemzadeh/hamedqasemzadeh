@@ -30,6 +30,22 @@ const HomePage = () => {
                             repeat={Infinity}
                         />
                     </div>
+                <div>
+                    <p className="text-gray-700 py-4 max-w-[700px]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! Provident similique accusantium nemo autem.
+                    </p>
+                    <div>
+                        <button className="text-blue-950 group border-2 px-6 py-3 m-y2 flex items-center hover:border-orange-800">
+                            View Work
+                            <span className="group-hover:rotate-90 duration-300">
+                                <HiArrowNarrowRight  className="ml-3" />
+                            </span>
+                        </button>
+                    </div>
+                </div>
 
 
             </div>
